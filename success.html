@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/170a939df3.js" crossorigin="anonymous"></script>
+    <script src="server.js"></script>
     <title>The result </title>
     <style>
         .btn{
@@ -21,13 +22,13 @@
            }
     </style>
 </head>
-<body style="background-color:#FBE7C6";>
+<body style="background-color:#FBE7C6"; onload="get_random_element()">
 
     <center>
-        <h1 style="color: #C08524; size: 48px;font-family: 'Aclonica'; padding-top: 200px;padding-bottom: 30px;">Tisra Alarippu</h1>
+        <h1 style="color: #C08524; size: 48px;font-family: 'Aclonica'; padding-top: 200px;padding-bottom: 30px;" id="result" name="result">Tisra Alarippu</h1>
         <br><br>
        
-        <button class="btn"><i class='fa fa-refresh' style="color: #DFD5C5; font-size: 22px;"></i></button>
+        <button class="btn" onclick="get_random_element()"><i class='fa fa-refresh' style="color: #DFD5C5; font-size: 22px;"></i></button>
         <button class="btn"  onclick="window.location.href='index.html';"><i class='fas fa-step-backward' style="color: #DFD5C5; font-size: 22px;"></i></button>
        
     </center>
